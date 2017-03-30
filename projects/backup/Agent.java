@@ -141,11 +141,8 @@ public class Agent {
 			int lowestScore = 9999;
 			for (Transformation choice : choiceTransforms) {
 
-				if (!matchedTr.get(choice)) {
-					int diff = getDiffTr(target, choice);
-					if (diff < lowestScore) {
-						lowestScore = diff;
-						mapTr.put(target, choice);
+				/*hide some source code */
+				/*so that no one can take it directly for KBAI class*/
 					}
 				}
 			}
@@ -242,14 +239,8 @@ public class Agent {
 		for (RavensObject ob1 : map.keySet()) {
 
 			if (map.get(ob1) == null) {
-				Transformation tr = new Transformation();
-				tr.setSource(ob1);
-				tr.setTarget(null);
-				ArrayList<String> mutations = new ArrayList<String>();
-				mutations.add(String.format("%s disappeared", ob1
-						.getAttributes().get("shape")));
-				tr.setMutations(mutations);
-				results.add(tr);
+				/*hide some source code */
+				/*so that no one can take it for KBAI class*/
 			} else {
 				RavensObject ob2 = map.get(ob1);
 				HashMap<String, String> ob1Attrs = ob1.getAttributes();
